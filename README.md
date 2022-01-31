@@ -2,4 +2,8 @@
 
 This is a demo of Modern Portfolio Theory in R. The idea is that, when there are two or more risky assets, there exists an optimal portfolio of the assets for any given risk that maximizes the expected return. As long as there isn't perfect correlation between the assets, then the so-called unsystematic risk associated with a singular asset can be diversified away so that only the market, systematic risk remains.
 
-# Data
+## Methodology and data
+
+One way to identify the possible portfolios is to simulate them. In this project 50000 portfolios are simulated using a uniform distribution, meaning that every asset in the portfolio has an equal chance to have a value in the range of [0,1], summing to 1. Other way to obtain the optimal portfolios for the risk is to express the problem as a quadratic programming optimization problem.
+
+Apple, 3M, Microsoft, Comcast, and Goldman Sach stocks are used to construct the portfolios. The stock prices from 2.1.2019 to 12.30.2021 are used, and were gotten from Yahoo Finance. Figures 1.1 and 1.2 display the stock prices and returns, respectively, for the period.
