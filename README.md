@@ -16,5 +16,7 @@ Apple, 3M, Microsoft, Comcast, and Goldman Sach stocks from 2.1.2019 to 12.30.20
 
 **Figure 2.** Stock returns
 
+The beginning of 2020 is an especially volatile period, representing the 2020 stock market crash.
+
 ## Results
 
