@@ -43,3 +43,7 @@ Figure 4. overlays the previous plot with the efficient frontier of portfolios t
 |QP|0.8007|0.0000|0.0000|0.1993|0.0000|0.7162|0.3226|
 
 **Table 1.** Differences between simulated and QP portfolios
+
+Table 1. illustrates the differences in weights, returns and risks between the simulated and quadratic programming (QP) minimum variance (MVP) and tangency portfolios (TP).
+
+Limitations of this type of portfolio optimization is how and when one gets the expected returns associated with the stocks. No historic data is quarantee of the future.
