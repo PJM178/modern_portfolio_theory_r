@@ -4,7 +4,7 @@ This is a demo of Modern Portfolio Theory in R. The idea is that, when there are
 
 ## Methodology and data
 
-One way to identify the possible portfolios is to simulate them. In this project 50000 portfolios are simulated using a uniform distribution, meaning that every asset in the portfolio has an equal chance to have a value in the range of [0,1], summing to 1. Other way to obtain the optimal portfolios for the risk is to express the problem as a quadratic programming optimization problem.
+One way to identify the possible portfolios is to simulate them. In this project 50000 portfolios are simulated using a uniform distribution, meaning that every asset in the portfolio has an equal chance to have a value in the range of [0,1], summing to 1. Other way to obtain the optimal portfolios for the risk is to express the problem as a quadratic programming optimization problem and then solve it w.r.t. the constraints.
 
 Apple, 3M, Microsoft, Comcast, and Goldman Sach stocks from 2.1.2019 to 12.30.2021 are used to construct the portfolios, and were gotten from Yahoo Finance. Figures 1. and 2. illustrate the stock prices and returns, respectively, for the period. The returns are calculated as arithmetic returns.
 
