@@ -46,4 +46,4 @@ Figure 4. overlays the previous plot with the efficient frontier of portfolios t
 
 Table 1. illustrates the differences in weights, returns and risks between the simulated and quadratic programming (QP) minimum variance (MVP) and tangency portfolios (TP).
 
-Limitations of this type of portfolio optimization is how and when one gets the expected returns associated with the stocks. No historic data is quarantee of the future.
+Limitations of this type of portfolio optimization is how and when one gets the expected returns, from which the risk is also derived, associated with the stocks. No historic data is quarantee of the future. Models such as asymmetric GARCH models may be better at modeling the volatility.
