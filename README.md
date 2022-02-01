@@ -30,4 +30,16 @@ Figure 3. displays a scatterplot of the results of simulating 50000 portfolios w
 
 **Figure 4.** Simulated portfolios and the efficient frontier from the quadratic programming optimization
 
-Figure 4. overlays the previous plot with the efficient frontier of portfolios that were gotten from the quadratic programming optimization problem. These values are not stochastic, and it's possible to obtain the optimally weighted portfolios for the given risk as long as covariance-variance matrix and return vectors are defined. It can be seen that the simulated portfolios approximate the optimal portfolios pretty nicely. However, for the higher return portfolios the simulation doesn't do so well as the weights in several stocks are zero. 
+Figure 4. overlays the previous plot with the efficient frontier of portfolios that were gotten from the quadratic programming optimization problem. These values are not stochastic, and it's possible to obtain the optimally weighted portfolios for the given risk as long as covariance-variance matrix and return vectors are defined. It can be seen that the simulated portfolios approximate the optimal portfolios pretty nicely. However, for the higher return portfolios the simulation doesn't do so well as the weights in several stocks are zero.
+
+|MVP|Apple|3M|Comcast|Microsoft|Goldman Sachs|R|SD|
+|------|---|---|---|---|---|---|---|
+|Simulated|0.0065|0.3926|0.3459|0.2478|0.0073|0.2189|0.2343|
+|QP|
+
+|TP|Apple|3M|Comcast|Microsoft|Goldman Sachs|R|SD|
+|---|---|---|---|---|---|---|---|
+|Simulated|
+|QP|
+
+asdasd
