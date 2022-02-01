@@ -1,5 +1,5 @@
 # Modern portfolio theory - efficient frontier
-# Petri Montonen 2021
+# Petri Montonen 2022
 
 # Loading the necessary packages and data
 
@@ -14,7 +14,7 @@ library(quadprog)
 library(IntroCompFinR)
 
 rm(list=ls())
-setwd("C:/Users/petri/Desktop/GitHub töitä/R/MPT_Efficient_Frontier")
+setwd("C:/Users/petri/Desktop/GitHub tÃ¶itÃ¤/R/MPT_Efficient_Frontier")
 
 mmm = read.csv("MMM.csv")
 aapl = read.csv("AAPL.csv")
