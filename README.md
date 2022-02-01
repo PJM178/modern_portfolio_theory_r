@@ -35,11 +35,11 @@ Figure 4. overlays the previous plot with the efficient frontier of portfolios t
 |MVP|Apple|3M|Comcast|Microsoft|Goldman Sachs|R|SD|
 |------|---|---|---|---|---|---|---|
 |Simulated|0.0065|0.3926|0.3459|0.2478|0.0073|0.2189|0.2343|
-|QP|
+|QP||0.0234|0.4058|0.3283|0.2425|0.0000|0.2227|0.2341|
 
 |TP|Apple|3M|Comcast|Microsoft|Goldman Sachs|R|SD|
 |---|---|---|---|---|---|---|---|
-|Simulated|
-|QP|
+|Simulated|0.7883|0.0053|0.0288|0.1571|0.0205|0.6964|0.3166|
+|QP|0.8007|0.0000|0.0000|0.1993|0.0000|0.7162|0.3226|
 
-asdasd
+**Table 1.** Differences between simulated and QP portfolios
