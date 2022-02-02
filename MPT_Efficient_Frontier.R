@@ -164,6 +164,7 @@ min_sd = portfolios[which.min(portfolios$SD),]
 
 efdf = data.frame(R = efficient_frontier$er, SD = efficient_frontier$sd)
 tpdf = data.frame(R = tangency_portfolio$er, SD = tangency_portfolio$sd)
+opdf = data.frame(R = )
 
 tangency_portfolio
 max_sharpe
@@ -177,7 +178,11 @@ portfolios %>%
   ggplot() +
   geom_point(aes(x = SD, y = R, color = SR)) +
   geom_point(data = min_sd, aes(x = SD, y = R), color = "red", size = 2, stroke = 1.5) +
-  geom_point(data = max_sharpe, aes(x = SD, y = R), color = "red", size = 2, stroke = 1.5)
+  geom_point(data = max_sharpe, aes(x = SD, y = R), color = "red", size = 2, stroke = 1.5) +
+  geom_text_repel(data = min_sd, aes(x = SD, y = R, label = "Minimum variance portfolio"), color = "red",
+                  nudge_x = 0, nudge_y = -0.15, size = 4.5) +
+  geom_text_repel(data = max_sharpe, aes(x = SD, y = R, label = "Tangency portfolio (Max SR)"), color = "red",
+                  nudge_x = -0.025, nudge_y = 0.03, size = 4.5)
 
 # Simulated portfolios and the efficient frontier gotten from quadratic programming optimization
 
@@ -188,4 +193,10 @@ portfolios %>%
   geom_point(data = max_sharpe, aes(x = SD, y = R), color = "red", size = 2, stroke = 1.5) +
   geom_point(data = tpdf, aes(SD, R), size = 2, stroke = 1.5, color = "black") +
   geom_line(data = efdf, aes(x = SD, y = R), size = 1, color = "black") +
-  geom_point(data = efdf, aes(x = SD, y = R), size = 2, color = "black", shape = 21, stroke = 1.5, fill = "white")
+  geom_point(data = efdf, aes(x = SD, y = R), size = 2, color = "black", shape = 21, stroke = 1.5, fill = "white") +
+  geom_text_repel(data = min_sd, aes(x = SD, y = R, label = "Minimum variance portfolio"), color = "red",
+            nudge_x = 0, nudge_y = -0.15, size = 4.5) +
+  geom_text_repel(data = max_sharpe, aes(x = SD, y = R, label = "Tangency portfolio (Max SR)"), color = "red",
+                  nudge_x = -0.025, nudge_y = 0.05, size = 4.5)
+
+# EOF #
