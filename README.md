@@ -32,6 +32,8 @@ Figure 3. displays a scatterplot of the results of simulating 50000 portfolios w
 
 Figure 4. overlays the previous plot with the efficient frontier of portfolios that were gotten from the quadratic programming optimization problem. These values are not stochastic, and it's possible to obtain the optimally weighted portfolios for the given risk as long as covariance-variance matrix and return vectors are defined. It can be seen that the simulated portfolios approximate the optimal portfolios pretty nicely. However, for the higher return portfolios the simulation doesn't do so well as the weights in several stocks are zero.
 
+**Table 1.** Differences between simulated and QP portfolios
+
 |MVP|Apple|3M|Comcast|Microsoft|Goldman Sachs|R|SD|
 |------|---|---|---|---|---|---|---|
 |Simulated|0.0065|0.3926|0.3459|0.2478|0.0073|0.2189|0.2343|
@@ -41,8 +43,6 @@ Figure 4. overlays the previous plot with the efficient frontier of portfolios t
 |---|---|---|---|---|---|---|---|
 |Simulated|0.7883|0.0053|0.0288|0.1571|0.0205|0.6964|0.3166|
 |QP|0.8007|0.0000|0.0000|0.1993|0.0000|0.7162|0.3226|
-
-**Table 1.** Differences between simulated and QP portfolios
 
 Table 1. illustrates the differences in weights, returns and risks between the simulated and quadratic programming (QP) minimum variance (MVP) and tangency portfolios (TP).
 
